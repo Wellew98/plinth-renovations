@@ -308,6 +308,8 @@ textarea{min-height:140px}
 .blueprint h2{color:#fff}
 .blueprint .sub{color:#bdb49e}
 .blueprint .why p{color:#d6cdb6}
+.blueprint .craft p{color:#d6cdb6}
+.blueprint .craft a.more,.blueprint .craft p a{color:var(--gold)}
 .blueprint .why ul.ticks li{color:#ece4cf}
 .blueprint .checklist{background:#000;border-color:#4a4130}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
