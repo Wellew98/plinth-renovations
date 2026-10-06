@@ -210,7 +210,7 @@ textarea{min-height:140px}
   .head-right.open nav.main a{padding:12px 14px;font-size:16px}
   .header-cta{display:none}
   .head-right.open .header-cta{display:block;position:static;text-align:center;margin-top:12px}
-  .mobile-toggle{display:block}
+  .mobile-toggle{display:grid;place-items:center;width:48px;height:48px;flex:0 0 48px;background:#0d0d0c;position:relative;z-index:2;font-size:22px;padding:0}
   .section{padding:72px 0}
   .hero{padding:96px 0 80px}
   .foot-grid{grid-template-columns:1fr 1fr}
@@ -218,7 +218,12 @@ textarea{min-height:140px}
   .cta-band{padding:36px 28px}
   .testi{padding:36px 26px}
 }
-@media(max-width:600px){
+@media(max-width:380px){
+  .brand img{width:44px;height:44px;flex-basis:44px}
+  .brand .lockup strong{font-size:16px;letter-spacing:.04em}
+  .brand .lockup .sub{font-size:8.5px;letter-spacing:.18em}
+  .site-header .wrap{gap:8px}
+}
   .wrap{padding-left:18px;padding-right:18px}
   .topbar .wrap{flex-direction:column;gap:2px;padding-top:8px;padding-bottom:8px;text-align:center}
   .topbar{font-size:12.5px}
