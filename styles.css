@@ -218,12 +218,7 @@ textarea{min-height:140px}
   .cta-band{padding:36px 28px}
   .testi{padding:36px 26px}
 }
-@media(max-width:380px){
-  .brand img{width:44px;height:44px;flex-basis:44px}
-  .brand .lockup strong{font-size:16px;letter-spacing:.04em}
-  .brand .lockup .sub{font-size:8.5px;letter-spacing:.18em}
-  .site-header .wrap{gap:8px}
-}
+@media(max-width:600px){
   .wrap{padding-left:18px;padding-right:18px}
   .topbar .wrap{flex-direction:column;gap:2px;padding-top:8px;padding-bottom:8px;text-align:center}
   .topbar{font-size:12.5px}
@@ -231,7 +226,8 @@ textarea{min-height:140px}
   .topbar .wrap,.site-header .wrap{padding-left:18px;padding-right:18px}
   .site-header .wrap{gap:10px}
   .brand{flex:1 1 auto;min-width:0;gap:10px}
-  .brand .lockup strong{font-size:17px}
+  .brand .lockup strong{font-size:15px}
+  .brand .lockup .sub{font-size:8px;letter-spacing:.16em}
   .mobile-toggle{display:grid;place-items:center;width:48px;height:48px;flex:0 0 48px;font-size:22px;padding:0}
   .hero{padding:84px 0 64px}
   .hero p.lead{font-size:17px}
@@ -256,6 +252,12 @@ textarea{min-height:140px}
   .sticky-call{display:block}
   body{padding-bottom:0}
   .svc-nav{top:72px}
+}
+@media(max-width:380px){
+  .brand img{width:44px;height:44px;flex-basis:44px}
+  .brand .lockup strong{font-size:14px;letter-spacing:.04em}
+  .brand .lockup .sub{font-size:8px;letter-spacing:.16em}
+  .site-header .wrap{gap:8px}
 }
 /* Blueprint Atelier (homepage) - pure CSS, zero downloads */
 .eyebrow{display:flex;align-items:center;gap:12px}
@@ -316,4 +318,4 @@ textarea{min-height:140px}
 .card .thumb-icon{margin:-30px -28px 20px;height:172px;display:flex;align-items:center;justify-content:center;background-color:#101010;background-image:linear-gradient(rgba(201,168,106,.1) 1px,transparent 1px),linear-gradient(90deg,rgba(201,168,106,.1) 1px,transparent 1px);background-size:26px 26px;color:var(--gold);border-radius:17px 17px 0 0;position:relative}
 .card .thumb-icon svg{width:56px;height:56px}
 .card .num{position:absolute;top:12px;left:12px;font-family:var(--display);font-size:14px;letter-spacing:.08em;color:#fff;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.25);padding:3px 12px;border-radius:999px;z-index:2}
-@media(max-width:1120px){.svc-nav{top:66px}}
+@media(max-width:1120px) and (min-width:601px){.svc-nav{top:94px}}
