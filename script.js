@@ -13,7 +13,10 @@ document.addEventListener('DOMContentLoaded',()=>{
   const t=document.querySelector('.mobile-toggle');
   const n=document.querySelector('nav.main');
   const hr=document.querySelector('.head-right');
-  if(t&&n){t.addEventListener('click',()=>{n.classList.toggle('open');if(hr)hr.classList.toggle('open',n.classList.contains('open'));t.textContent=n.classList.contains('open')?'✕ Close':'☰ Menu';});}
+  if(t&&n){t.addEventListener('click',()=>{n.classList.toggle('open');if(hr)hr.classList.toggle('open',n.classList.contains('open'));t.textContent=n.classList.contains('open')?'✕':'☰';t.setAttribute('aria-label',n.classList.contains('open')?'Close menu':'Open menu');});
+    n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');if(hr)hr.classList.remove('open');t.textContent='☰';}));
+    window.addEventListener('resize',()=>{if(window.innerWidth>1120){n.classList.remove('open');if(hr)hr.classList.remove('open');t.textContent='☰';}});
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&n.classList.contains('open')){n.classList.remove('open');if(hr)hr.classList.remove('open');t.textContent='☰';}});}
 
   // active nav
   try{

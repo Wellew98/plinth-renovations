@@ -217,7 +217,14 @@ textarea{min-height:140px}
 }
 @media(max-width:600px){
   .wrap{padding-left:18px;padding-right:18px}
+  .topbar .wrap{flex-direction:column;gap:2px;padding-top:8px;padding-bottom:8px;text-align:center}
+  .topbar{font-size:12.5px}
+  .topbar .badge{display:none}
   .topbar .wrap,.site-header .wrap{padding-left:18px;padding-right:18px}
+  .site-header .wrap{gap:10px}
+  .brand{flex:1 1 auto;min-width:0;gap:10px}
+  .brand .lockup strong{font-size:17px}
+  .mobile-toggle{display:grid;place-items:center;width:48px;height:48px;flex:0 0 48px;font-size:22px;padding:0}
   .hero{padding:84px 0 64px}
   .hero p.lead{font-size:17px}
   .hero-actions{display:flex;flex-direction:column;gap:10px}
@@ -229,6 +236,14 @@ textarea{min-height:140px}
   .foot-grid{grid-template-columns:1fr}
   .cta-band .btn{width:100%;text-align:center;margin:4px 0}
   .cta-band .btn-ghost{margin-left:0}
+  .hero .trust{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:22px 0 6px}
+  .hero .trust span{font-size:11px;padding:8px 6px;text-align:center;letter-spacing:.08em}
+  footer{padding:48px 0 24px}
+  footer p{font-size:15.5px}
+  .foot-grid{gap:26px}
+  .foot-grid h4{margin:0 0 10px}
+  .foot-grid>div:nth-child(2) p,.foot-grid>div:nth-child(3) p{columns:2;column-gap:18px}
+  .foot-grid>div:nth-child(2) a,.foot-grid>div:nth-child(3) a{display:inline-block;padding:5px 0}
   .to-top{bottom:78px;right:14px}
   .sticky-call{display:block}
   body{padding-bottom:70px}
