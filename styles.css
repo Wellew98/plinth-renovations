@@ -229,7 +229,12 @@ textarea{min-height:140px}
   .head-right.open .header-cta{display:block;position:static;text-align:center;margin-top:12px}
   .mobile-toggle{display:grid;place-items:center;width:48px;height:48px;flex:0 0 48px;background:#0d0d0c;position:relative;z-index:2;font-size:22px;padding:0}
   .section{padding:96px 0}
-  .hero{padding:110px 0 90px;min-height:94svh}
+  .hero{padding:110px 0 90px;min-height:0}
+  .hero h1{font-size:clamp(34px,9vw,46px);max-width:12ch}
+  .hero-actions{flex-direction:row;margin-top:36px}
+  .hero-actions .btn{flex:1 1 0;width:auto;margin:0;text-align:center;padding:15px 8px;font-size:14.5px;border-radius:11px;white-space:nowrap}
+  .section{padding:112px 0}
+  .sig-row{gap:34px;margin-bottom:96px}
   .sig-row{grid-template-columns:1fr;gap:30px;margin-bottom:84px}
   .sig-row:nth-child(even of .sig-row) .sig-img{order:0}
   .sig-img img{height:300px}
@@ -251,8 +256,8 @@ textarea{min-height:140px}
   .mobile-toggle{display:grid;place-items:center;width:48px;height:48px;flex:0 0 48px;font-size:22px;padding:0}
   .hero{padding:84px 0 64px}
   .hero p.lead{font-size:17px}
-  .hero-actions{display:flex;flex-direction:column;gap:10px}
-  .hero-actions .btn{margin:0;width:100%;text-align:center}
+  .hero-actions{display:flex;flex-direction:row;gap:10px}
+  .hero-actions .btn{flex:1 1 0;width:auto;margin:0;text-align:center;padding:15px 8px;font-size:14.5px;border-radius:11px;white-space:nowrap}
   .stats .wrap{grid-template-columns:1fr 1fr;gap:20px;padding-top:28px;padding-bottom:28px}
   .stat b{font-size:30px}
   .grid9,.guides,.steps{grid-template-columns:1fr}
