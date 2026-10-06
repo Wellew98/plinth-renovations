@@ -261,8 +261,6 @@ textarea{min-height:140px}
   .hero-actions{display:flex;flex-direction:row;align-items:center;gap:18px;margin-top:32px}
   .hero-actions .btn{flex:0 1 auto;width:auto;margin:0;white-space:nowrap}
   .hero-actions .btn-gold{padding:13px 24px;font-size:15px;border-radius:999px;text-align:center}
-  .hero-actions .btn-ghost{border:0;background:none;color:#1c1811;margin:0;padding:4px 2px;font-size:15px;font-weight:800;border-radius:0;box-shadow:none;text-decoration:underline;text-underline-offset:4px}
-  .hero-actions .btn-ghost:hover{background:none;transform:none}
   .section-head{margin-bottom:40px}
   .hours-full{display:none}
   .hours-short{display:inline}
