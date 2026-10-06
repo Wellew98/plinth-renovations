@@ -248,7 +248,7 @@ textarea{min-height:140px}
   .foot-grid h4{margin:0 0 10px}
   .foot-grid>div:nth-child(2) p,.foot-grid>div:nth-child(3) p{columns:2;column-gap:18px}
   .foot-grid>div:nth-child(2) a,.foot-grid>div:nth-child(3) a{display:inline-block;padding:5px 0}
-  .to-top{bottom:86px;right:16px}
+  .to-top{left:16px;right:auto;bottom:16px}
   .sticky-call{display:block}
   body{padding-bottom:0}
   .svc-nav{top:72px}
