@@ -70,7 +70,7 @@ nav.main a.active{background:rgba(201,168,106,.2);color:#fff}
 .hero .trust span{background:rgba(255,255,255,.62);border:1px solid rgba(150,99,31,.5);backdrop-filter:blur(4px);color:#2a251c;text-shadow:none}
 .hero .btn-ghost{border-color:#2a251c;color:#1c1811;background:rgba(255,255,255,.35)}
 .hero .btn-ghost:hover{background:rgba(255,255,255,.6)}
-@media(prefers-reduced-motion:reduce){.hero-bg{display:none}}
+@media(prefers-reduced-motion:reduce){.hero-bg{display:none}.sticky-call a{animation:none}}
 .hero .kicker{color:#8a5f1e;font-weight:800;letter-spacing:.2em;text-transform:uppercase;font-size:13px}
 .hero h1{font-family:var(--display);font-weight:600;font-size:clamp(34px,5.6vw,68px);line-height:1.06;margin:16px 0 18px;color:#171309;max-width:16ch}
 .hero p.lead{max-width:740px;font-size:19px;line-height:1.7;color:#3d382c}
@@ -185,8 +185,11 @@ textarea{min-height:140px}
 /* floating */
 .to-top{position:fixed;right:22px;bottom:22px;width:48px;height:48px;border-radius:50%;border:1px solid #3a3425;background:#111;color:var(--gold);font-size:20px;cursor:pointer;display:none;z-index:70;box-shadow:var(--shadow-lg)}
 .to-top.show{display:block}
-.sticky-call{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:70}
-.sticky-call a{display:block;text-align:center;background:linear-gradient(180deg,#c98f3d,var(--bronze));color:#fff;font-weight:800;padding:15px;border-radius:14px;box-shadow:var(--shadow-lg)}
+.sticky-call{display:none;position:fixed;right:16px;bottom:16px;z-index:70}
+.sticky-call a{display:grid;place-items:center;width:58px;height:58px;border-radius:50%;background:linear-gradient(180deg,#c98f3d,var(--bronze));color:#fff;box-shadow:0 10px 26px rgba(0,0,0,.35);animation:fabPulse 2.6s ease-out infinite}
+.sticky-call a:hover{color:#fff}
+.sticky-call svg{width:26px;height:26px}
+@keyframes fabPulse{0%{box-shadow:0 10px 26px rgba(0,0,0,.35),0 0 0 0 rgba(184,119,42,.5)}70%{box-shadow:0 10px 26px rgba(0,0,0,.35),0 0 0 14px rgba(184,119,42,0)}100%{box-shadow:0 10px 26px rgba(0,0,0,.35),0 0 0 0 rgba(184,119,42,0)}}
 @media(max-width:1020px){
   .grid9{grid-template-columns:1fr 1fr}
   .guides{grid-template-columns:1fr 1fr}
@@ -244,9 +247,9 @@ textarea{min-height:140px}
   .foot-grid h4{margin:0 0 10px}
   .foot-grid>div:nth-child(2) p,.foot-grid>div:nth-child(3) p{columns:2;column-gap:18px}
   .foot-grid>div:nth-child(2) a,.foot-grid>div:nth-child(3) a{display:inline-block;padding:5px 0}
-  .to-top{bottom:78px;right:14px}
+  .to-top{bottom:86px;right:16px}
   .sticky-call{display:block}
-  body{padding-bottom:70px}
+  body{padding-bottom:0}
   .svc-nav{top:72px}
 }
 /* Blueprint Atelier (homepage) - pure CSS, zero downloads */
