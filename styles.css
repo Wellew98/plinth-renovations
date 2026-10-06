@@ -183,8 +183,8 @@ textarea{min-height:140px}
 .gallery-grid figure:hover img{transform:scale(1.07)}
 .gallery-grid figcaption{position:absolute;left:12px;bottom:12px;background:rgba(0,0,0,.65);color:#fff;font-size:13px;padding:6px 12px;border-radius:999px}
 /* floating */
-.to-top{position:fixed;right:22px;bottom:22px;width:48px;height:48px;border-radius:50%;border:1px solid #3a3425;background:#111;color:var(--gold);font-size:20px;cursor:pointer;display:none;z-index:70;box-shadow:var(--shadow-lg)}
-.to-top.show{display:block}
+.to-top{position:fixed;right:22px;bottom:22px;width:48px;height:48px;border-radius:50%;border:1px solid #3a3425;background:#111;color:var(--gold);font-size:20px;cursor:pointer;z-index:70;box-shadow:var(--shadow-lg);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .25s ease,transform .25s ease,visibility .25s}
+.to-top.show{opacity:1;visibility:visible;transform:none}
 .sticky-call{display:none;position:fixed;right:16px;bottom:16px;z-index:70}
 .sticky-call a{display:grid;place-items:center;width:58px;height:58px;border-radius:50%;background:linear-gradient(180deg,#c98f3d,var(--bronze));color:#fff;box-shadow:0 10px 26px rgba(0,0,0,.35);animation:fabPulse 2.6s ease-out infinite}
 .sticky-call a:hover{color:#fff}

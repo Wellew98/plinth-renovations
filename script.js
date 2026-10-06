@@ -2,11 +2,16 @@
 document.addEventListener('DOMContentLoaded',()=>{
   const header=document.querySelector('.site-header');
   const toTop=document.getElementById('toTop');
+  let pastFooter=false;
   const onScroll=()=>{
     const y=window.scrollY||0;
     if(header) header.classList.toggle('scrolled',y>10);
-    if(toTop) toTop.classList.toggle('show',y>700);
+    if(toTop) toTop.classList.toggle('show',y>700&&!pastFooter);
   };
+  const foot=document.querySelector('footer');
+  if(foot&&'IntersectionObserver' in window){
+    new IntersectionObserver(es=>{es.forEach(en=>{pastFooter=en.isIntersecting;onScroll();});},{threshold:.06}).observe(foot);
+  }
   window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
   if(toTop) toTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 
