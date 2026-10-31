@@ -33,9 +33,9 @@ all code and copy here is original.
 
 - Workspace root (this folder). GitHub: `https://github.com/Wellew98/plinth-renovations`,
   branch `main`. Live: `https://plinthrenovations.co.za` (apex; registered at Regery,
-  DNS on Cloudflare, `www` 301s to apex). The old
-  `https://plinth-renovations.wellefp.workers.dev` still resolves and should be
-  turned off once the domain is verified.
+  DNS on Cloudflare, `www` 301s to apex). The production
+  `https://plinth-renovations.wellefp.workers.dev` URL is disabled (404); preview
+  URLs remain enabled.
 - Cloudflare auto-deploys from `main` in ~1 min — wait, then hard-refresh.
 - Domain-specific plumbing lives at the repo root: per-page canonical + OG/Twitter
   tags, `sitemap.xml`, `robots.txt`, `og-cover.jpg` (1200x630). Any domain change
